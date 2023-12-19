@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%= campground.title %></title>
+    </head>
+    <body>
+        <h1><%= campground.title %></h1>
+        <h1><%= campground.location %></h1>
+        <form action="/campgrounds/<%= campground.id %>?_method=DELETE" method="POST">
+            <button>Delete</button>
+        </fom>
+        <footer>
+            <a href="/campgrounds">All Campgrounds</a>
+            <a href="/campgrounds/<%= campground.id %>/edit">Edit Campground</a>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add Campground</title>
+    </head>
+    <body>
+        <form action="/campgrounds" method="post">
+            <div>
+                <label for="title">Enter Campground Title:</label>
+                <input type="text" name="campground[title]" id="title">
+            </div>
+            <div>
+                <label for="location">Enter Campground Location:</label>
+                <input type="text" name="campground[location]" id="location">
+            </div>
+            <button>Add</button>
+        </form>
+        <a href="/campgrounds">All Campgrounds</a>
+    </body>
+</html>
