@@ -17,15 +17,12 @@ const CampgroundSchema = Schema({
 })
 
 CampgroundSchema.post('findOneAndDelete',async(doc)=>{
-    console.log("Deleted")
     if(doc){
         const review = await Review.deleteMany({
             _id:{
                 $in : doc.reviews
             }
         })
-        console.log(review)
-        
     }
 })
 
